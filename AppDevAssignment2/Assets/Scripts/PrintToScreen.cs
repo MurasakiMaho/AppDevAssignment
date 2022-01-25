@@ -9,7 +9,7 @@ public class PrintToScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        printout.text = "Started";
+        printout.text = "What can you do?";
     }
 
     // Update is called once per frame
@@ -18,13 +18,23 @@ public class PrintToScreen : MonoBehaviour
         
     }
 
-    public void ClickedButtA ()
+    public void ClickedButt1 ()
     {
-        printout.text = "Button A clicked!";
+        printout.text = "You tried attacking!";
     }
 
-    public void ClickedButtB()
+    public void ClickedButt2()
     {
-        printout.text = "Button B clicked!";
+        printout.text = "You tried calling for help!";
+    }
+
+    public void ClickedButt3()
+    {
+        printout.text = "You tried using an item!";
+    }
+
+    public void ClickedButt4()
+    {
+        printout.text = "You tried running away!";
     }
 }
