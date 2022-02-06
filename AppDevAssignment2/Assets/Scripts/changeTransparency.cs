@@ -6,37 +6,32 @@ using UnityEngine.UI;
 public class changeTransparency : MonoBehaviour
 {
     public Image pic;
-    public bool transparent;
+    public bool isTrans;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (isTrans == true)
+            pic.enabled = false;
+        else
+            pic.enabled = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
     public void clickEffect()
     {
-        var picAlpha = pic.color;
-        if (transparent == true)
+        if (isTrans == true)
         {
-            picAlpha.a = 1f;
+            isTrans = false;
+            pic.enabled = true;
         }
-        else if (transparent == false)
+        else 
         {
-            picAlpha.a = 0f;
+            isTrans = true;
+            pic.enabled = false;
         }
-        pic.color = picAlpha;
-    }
-    public void changeBool()
-    {
-        if (transparent == true)
-            transparent = false;
-        else
-            transparent = true;
     }
 }
