@@ -1,25 +1,58 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class joystickMove : MonoBehaviour
+public class JoystickMove : MonoBehaviour
 {
-    private Image FG, BG;
+
+
+    public GameObject joystick;
+    public GameObject joystickBG;
+    public Vector2 joystickVec;
+    private Vector2 joystickTouchPos;
+    private Vector2 joystickOriginalPos;
+    private float joystickRadius;
+
     // Start is called before the first frame update
     void Start()
     {
-        BG = GetComponent<Image>(); 
-        FG = transform.GetChild(0).GetComponent<Image>();
+        joystickOriginalPos = joystickBG.transform.position;
+        joystickRadius = joystickBG.GetComponent<RectTransform>().sizeDelta.y;
     }
 
-    public void Dragging()
+    public void PointerDown()
     {
-        Vector3 newPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1);
-        FG.rectTransform.position = newPos;
+        joystick.transform.position = Input.mousePosition;
+        joystickTouchPos = Input.mousePosition;
+
     }
-    public void ReturnOrigin()
+
+    public void Drag(BaseEventData baseEventData)
     {
-        FG.rectTransform.anchoredPosition = new Vector3(0, 0, 1);
+        PointerEventData pointerEventData = baseEventData as PointerEventData;
+        Vector2 dragPos = pointerEventData.position;
+        joystickVec = (dragPos - joystickTouchPos).normalized;
+
+        float joystickDist = Vector2.Distance(dragPos, joystickTouchPos);
+
+        if (joystickDist < joystickRadius)
+        {
+            joystick.transform.position = joystickTouchPos + joystickVec * joystickDist;
+        }
+
+        else
+        {
+            joystick.transform.position = joystickTouchPos + joystickVec * joystickRadius;
+        }
+
     }
+
+    public void PointerUp()
+    {
+        joystickVec = Vector2.zero;
+        joystick.transform.position = joystickOriginalPos;
+        joystickBG.transform.position = joystickOriginalPos;
+    }
+
 }
