@@ -1754,7 +1754,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 627305028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 737412296}
+        m_TargetAssemblyTypeName: soundReset, Assembly-CSharp
+        m_MethodName: resetValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &627305028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1891,6 +1903,7 @@ GameObject:
   - component: {fileID: 737412293}
   - component: {fileID: 737412295}
   - component: {fileID: 737412294}
+  - component: {fileID: 737412296}
   m_Layer: 5
   m_Name: sound segment
   m_TagString: Untagged
@@ -1960,6 +1973,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737412292}
   m_CullTransparentMesh: 1
+--- !u!114 &737412296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737412292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49215423a050f574faa56fa01894fda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicVol: {fileID: 1111543055}
+  SFXVol: {fileID: 1978513852}
 --- !u!1 &873241897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,7 +5171,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.531
+  m_Value: 0.395
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
