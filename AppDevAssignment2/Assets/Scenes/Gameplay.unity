@@ -895,8 +895,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1996363760}
   m_HandleRect: {fileID: 1996363759}
   m_Direction: 2
-  m_Value: 0.9999683
-  m_Size: 0.80962425
+  m_Value: 0.42630783
+  m_Size: 0.8096242
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1146,7 +1146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.74, y: 31.695593}
+  m_AnchoredPosition: {x: 11.74, y: 28.415684}
   m_SizeDelta: {x: 281.92, y: 584.0447}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489173331
@@ -2099,7 +2099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -64.48546}
+  m_AnchoredPosition: {x: 0, y: 5.043297}
   m_SizeDelta: {x: 258.4411, y: 636.6462}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101693804
@@ -2811,7 +2811,7 @@ RectTransform:
   m_GameObject: {fileID: 1246003141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2163211, y: 1.2163211, z: 1.2163211}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1961544281}
   m_RootOrder: 8
@@ -3310,9 +3310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb2e205e9293894f9ec2f259e279d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 828817094}
-  joystickBG: {fileID: 1756606685}
-  joystickVec: {x: 0, y: 0}
 --- !u!114 &1468747583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3932,8 +3929,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 540246452}
   m_HandleRect: {fileID: 540246451}
   m_Direction: 2
-  m_Value: 1.0000614
-  m_Size: 0.8282731
+  m_Value: 1.0478722
+  m_Size: 0.8605075
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
