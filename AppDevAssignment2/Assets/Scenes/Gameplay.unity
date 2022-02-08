@@ -895,7 +895,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1996363760}
   m_HandleRect: {fileID: 1996363759}
   m_Direction: 2
-  m_Value: 0.70080334
+  m_Value: 0.9999683
   m_Size: 0.8096242
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -1146,7 +1146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.74, y: 0.024397567}
+  m_AnchoredPosition: {x: 11.74, y: 31.48034}
   m_SizeDelta: {x: 281.92, y: 584.0447}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &489173331
@@ -2099,7 +2099,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -28.226059}
+  m_AnchoredPosition: {x: 0, y: -64.48546}
   m_SizeDelta: {x: 258.4411, y: 636.6462}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101693804
@@ -2527,6 +2527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1157292551}
   - component: {fileID: 1157292552}
+  - component: {fileID: 1157292553}
   m_Layer: 0
   m_Name: Monsters
   m_TagString: Untagged
@@ -2599,6 +2600,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1157292553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157292550}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.47, y: 1.49, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1171509715
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,8 +3946,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 540246452}
   m_HandleRect: {fileID: 540246451}
   m_Direction: 2
-  m_Value: 1.0002491
-  m_Size: 0.83923596
+  m_Value: 1.0031985
+  m_Size: 0.8286077
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
