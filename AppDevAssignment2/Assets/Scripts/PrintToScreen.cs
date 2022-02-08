@@ -54,4 +54,12 @@ public class PrintToScreen : MonoBehaviour
             printout.text = "You failed!";
         }
     }
+    public void ClickedButt5()
+    {
+        printout.text = "A pressed!";
+    }
+    public void ClickedButt6()
+    {
+        printout.text = "B pressed!";
+    }
 }
