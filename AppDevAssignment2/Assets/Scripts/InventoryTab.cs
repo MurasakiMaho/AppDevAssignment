@@ -30,26 +30,33 @@ public class InventoryTab : MonoBehaviour
     }
     public void activateTab1()
     {
+
         tab1on = true;
         tab2on = false;
         tab3on = false;
     }
     public void activateTab2()
     {
-        tab1on = false;
-        tab2on = true;
-        tab3on = false;
+        if (tab1 == true || tab2 == true || tab3 == true)
+        {
+            tab1on = false;
+            tab2on = true;
+            tab3on = false;
+        }
     }
     public void activateTab3()
     {
-        tab1on = false;
-        tab2on = false;
-        tab3on = true;
+        if (tab1 == true || tab2 == true || tab3 == true)
+        {
+            tab1on = false;
+            tab2on = false;
+            tab3on = true;
+        }
     }
     public void tabsOff()
     {
-        tab1on = false;
-        tab2on = false;
-        tab3on = false;
+           tab1on = false;
+           tab2on = false;
+           tab3on = false;
     }
 }
