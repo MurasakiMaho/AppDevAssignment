@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R5CR607Q4QN",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 25893,
+        "processId": 26420,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -72,6 +72,12 @@
             "deviceId": "R5CR607Q4QN",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 25893,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR607Q4QN",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 26420,
             "exited": false
         }
     ],
