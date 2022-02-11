@@ -317,7 +317,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.395, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2010,14 +2010,13 @@ GameObject:
   m_Component:
   - component: {fileID: 403988511}
   - component: {fileID: 403988512}
-  - component: {fileID: 403988513}
   m_Layer: 5
   m_Name: settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &403988511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2059,22 +2058,6 @@ MonoBehaviour:
   tab1: {fileID: 216645751}
   tab2: {fileID: 1881902207}
   tab3: {fileID: 452845650}
---- !u!114 &403988513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403988510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 647ca545c1298a9498d14eb6982f6102, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: {fileID: 440510385}
-  b: {fileID: 1677497389}
-  c: {fileID: 403566071}
-  d: {fileID: 1541343227}
 --- !u!1 &440510383
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,57 +2140,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 403988512}
-        m_TargetAssemblyTypeName: InventoryTab, Assembly-CSharp
-        m_MethodName: tabsOff
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchA
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchB
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchC
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchD
+      - m_Target: {fileID: 403988510}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2605,8 +2540,8 @@ RectTransform:
   m_Father: {fileID: 312032216}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.395, y: 0}
+  m_AnchorMax: {x: 0.395, y: 1}
   m_AnchoredPosition: {x: 4.779999, y: 1.5900002}
   m_SizeDelta: {x: 29.54, y: 3.18}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3456,45 +3391,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchA
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchB
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchC
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 403988513}
-        m_TargetAssemblyTypeName: buttonSwitch, Assembly-CSharp
-        m_MethodName: switchD
+      - m_Target: {fileID: 403988510}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3666,7 +3565,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.531, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5622,8 +5521,8 @@ RectTransform:
   m_Father: {fileID: 1995511544}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.531, y: 0}
+  m_AnchorMax: {x: 0.531, y: 1}
   m_AnchoredPosition: {x: 4.779999, y: 1.5900002}
   m_SizeDelta: {x: 29.54, y: 3.18}
   m_Pivot: {x: 0.5, y: 0.5}
